@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Baloo Thambi 2', cursive;
+}
+
+body
+{
+    background-color: #f2faff !important;
+}
+
+a{ text-decoration: none;}
+
+a:hover { text-decoration: none !important;}
+
+li{ list-style: none;}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #696969;
+}
+/* Header */
+
+.header
+{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 34, 51), rgba(0, 6, 65, 0.774)), url('./image/hdr.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    background-attachment: fixed;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+
+#logo
+{
+    margin: -11px 0px 6px -8px;
+    font-size: 2rem;
+    color: rgb(97, 0, 0);
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+#logo:hover
+{
+    transition: 0.5s;
+    text-shadow: 0px 0px 20px rgb(0, 2, 90);
+    text-decoration: underline;
+}
+
+
+
+.nav-item
+{
+    margin: -15px -128px -15px 128px;
+}
+
+.nav-link 
+{
+    color: rgb(73, 73, 73) !important;
+    padding: 16px 30px !important;
+    font-weight: bolder;
+    transition: 0.25s;
+}
+
+.nav-link:hover
+{
+    /* background-color: rgba(87, 0, 0, 0.678); */
+    color: rgb(0, 0, 0) !important;
+    font-weight: bolder;
+    text-decoration: underline !important;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
+    transition: 0.25s;
+    transform: scale(1.4);
+}
+
+.header::before
+{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: linear-gradient(to right, #b430307e 0%, #1a00aa83 26%, #003c3950 100%);
+    opacity: 0.4;
+    z-index: -5;
+}
+
+.navbar::before
+{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: linear-gradient(to right, #fafbff 100%, #f7f9ff 100%, #ffffff 100%);
+    opacity: 0.9;
+    z-index: -1;
+    clip-path: polygon(100% 0%, 100% 75%, 54% 100%, 0% 75%, 0 0);
+}
+
+.header-section
+{
+    width: 100%;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+}
+
+.center-div
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.center-div h1
+{
+    font-size: 2.8rem;
+}
+
+.heared-buttons
+{
+    margin: 34px 10px -30px 1px !important;
+}
+
+.heared-buttons a
+{
+    border: 1px solid white;
+    border-radius: 55px;
+    padding: 12px 35px;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.heared-buttons a:hover
+{
+    color: #009480;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.404);
+}
+
+.center-div p
+{
+    font-size: 1.5rem;
+    padding: 10px 0 20px 0;
+    color: rgb(124, 124, 124) !important;
+}
+
+/* Extra Div */
+.header-extradiv
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 100px 0;
+}
+
+.containers
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rows
+{
+    border: 2px solid rgba(0, 110, 255, 0.521);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 21px ;
+    width: 28%;
+    padding: 50px 40px;
+    box-shadow: 0px 0px 20px 0px rgba(5, 5, 5, 0.486);
+    transition: 0.5s;
+}
+
+@media (max-width:800px)
+{
+.rows
+{
+    width: 91%;
+}
+.rows:hover
+{
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 4px black;
+    transform: scale(1);
+}
+
+}
+
+.rows:hover
+{
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 4px black;
+    transform: scale(1.2);
+}
+
+/* ---------------- Service Div------------------- */
+
+.servicediv
+{
+    margin: 73px 0px 0px 0px;
+}
